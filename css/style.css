@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Jost", sans-serif;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.main-layout{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+#background-video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: -1;
+ 
+}
+/** styling header container **/
+.header{
+    display: flex;
+    width: 100%;
+    height:  70px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.header .element{
+    font-size: 1.4rem;
+    color: #fff;
+    margin-left: -10%;
+    line-height: 60px;
+    letter-spacing: 7px;
+}
+.header .icon{
+    font-size: 1.4rem;
+    color: #108688;
+    line-height: 60px;
+}
+/** styling the signup button **/
+.header .signup{
+    width: 25%;
+    height: inherit;
+    margin-right: -5%;
+}
+.header .signup label{
+    font-size: 1rem;
+    color: white;
+    line-height: 60px;
+    letter-spacing: 5px;
+}
+.header .signup button{
+    width: 30%;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-top: 2%;
+    transition: .7s;
+    outline: none;
+    
+}
+.header .signup button:hover{
+    transition: .7s;
+    background-color: #108688;
+    border: 1px solid #108688;
+    cursor: pointer;
+}
+
+/** styling the form-card */
+.form-card{
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+/* styling the divs inside the form-card */
+.form-card .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
+.form-card .right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+/** styling the content in the left div **/
+.form-card .left .ruler{
+    width: 0.1%;
+    height: 70%;
+    background-color: #108688;
+    margin-top: 15%;
+}
+.form-card .left .content{
+    width: 99%;
+    height: 100%;
+}
+
+.form-card .left .content h3{
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    color: white;
+    margin-left: 15%;
+    margin-top: 30%;
+    
+}
+
+/** styling the ruler2 div as a ruler **/
+.form-card .left .content .ruler2{
+    width: 33%;
+    height: 1px;
+    background-color: #108688;
+    margin-left: 16%;
+    margin-top: 1%;
+}
+
+/** stying the p tag in content div **/
+.form-card .left .content p{
+    color: white;
+    font-size: 1rem;
+    width: 70%;
+    text-align: justify;
+    margin-left: 17%;
+    margin-top:8%;
+}
+.form-card .left strong{
+    color: #108688;
+    font-weight: 300;
+}
+.form-card .left roach{
+    color: white;
+    font-weight: 500;
+}
+
+/** styling the form box **/
+.form-card .right #login{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    margin-top: 30%;
+ 
+}
+.form-card .right #login .user{
+    width: 100%;
+    height: 20%;
+}
+
+/** styling the input element in the user div */
+#login .user i{
+    color: #108688;
+    font-size: 1.2rem;
+    margin: 3% 0 0 3%;
+}
+#login .user .username{
+    width: 80%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 3%;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+#login .user .username::placeholder{
+    font-size: 1.1rem;
+    color: #999;
+    font-family: "Jost", sans-serif;
+}
+/** styling the input element in the password div **/
+.form-card .right #login .password{
+    width: 100%;
+    height: 20%;
+    margin-top: 1%;
+}
+#login .password i{
+    color: #108688;
+    font-size: 1.2rem;
+    margin: 3% 0 0 3%;
+}
+#login .password .pass{
+    width: 80%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 3%;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+#login .password .pass::placeholder{
+    font-size: 1.1rem;
+    color: #999;
+}
+
+/** styling the checkbox and label **/
+.form-card .right #login #remember{
+    margin-left: 3.5%;
+    accent-color: #108688;
+    cursor: pointer;
+
+}
+.form-card .right #login .rem{
+    color: #999;
+    margin-left: 2%;
+    font-size: 1.1rem;
+    transition: .7s;
+}
+.form-card .right #login .rem:hover{
+    color: #108688;
+    font-size: 1.2rem;
+    transition: .7s;
+    cursor: pointer;
+}
+/** styling the login button **/
+.form-card .btnLogin{
+    width: 30%;
+    height: 45px;
+    margin-left: 30%;
+    background-color: #108688;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-top: 5%;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: .7s;
+}
+.form-card .btnLogin:hover{
+    /** box-shadow: 0 0 5px goldenrod,  0 0 5px goldenrod, 0 0 30px goldenrod, 0 0 10px goldenrod; **/
+    background: linear-gradient(to right, #108688, #fff);
+    color: black;
+    transition: .7s;
+}
+
+/** changing positions of both forms **/
+#login{
+    position: absolute;
+    left: 10%;
+    transition: .5s;
+
+}
+#Signup{
+    position: absolute;
+    right:100%;
+    width:80%;
+    height: 80%;
+    margin-top: 30%;
+    transition: .5s;
+}
+
+/** styling the signup form elements **/
+.form-card .right .fullname{
+    width: 100%;
+    height: 15%;
+}
+/** styling the font icons in the fullname div **/
+.form-card .right .fullname i{
+    color: #108688;
+    font-size: 1.2rem;
+    margin: 3% 0 0 3%;
+}
+/** styling the input elements in the fullname div **/
+.form-card .right .fullname .firstname,
+.form-card .right .fullname .lastname{
+    width: 35%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    outline: none;
+    border-bottom: 1px solid #999;
+    margin-left: 3%;
+} 
+/** styling the font icon in the username div **/
+.form-card .right .Username i{
+    color: #108688;
+    font-size: 1.2rem;
+    margin: 3% 0 0 3%;
+}
+
+/** styling the input element in the username div **/
+.form-card .right .Username .username{
+    width: 80%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 3%;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+/** styling the username div box ***/
+.form-card .right .Username{
+    width: 100%;
+    height: 15%;
+    margin-top: -2%;
+}
+
+
+/** styling the i class for the password & confirm password **/
+.form-card .Password{
+    width: 100%;
+    height: 15%;
+}
+.form-card .Password i{
+    color: #108688;
+    font-size: 1.2rem;
+    margin: 3% 0 0 3%;
+}
+
+/** styling the input element in the password div **/
+.form-card .Password .pass{
+    width: 35%;
+    height: 50%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 3%;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+
+/** styling calender div & its elements **/
+.calender{
+    width: 100%;
+    height: 15%;
+}
+.calender #dob{
+    color: #999;
+    font-size: 1.2rem;
+    margin-left: 15%;
+    margin-right: 1%;
+}
+.calender .input-calender{
+    width: 35%;
+    height: 50%; 
+    background-color: transparent;
+    color: #999;
+    font-size: 1.2rem;
+    margin-left: 3%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+.form-card .right #terms{
+    color: #999;
+    font-size: 1.3rem;
+    margin-left: 5%;
+    text-decoration: none;
+    transition: .5s;
+}
+.form-card .right #terms:hover{
+    color: goldenrod;
+    border-bottom: 1px solid #108688;
+    cursor: pointer;
+    transition: .5s;
+
+}
+/** styling the signup button **/
+.form-card .right .submit{
+    width: 30%;
+    height: 45px;
+    border: none;
+    background-color: goldenrod;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 5%;
+    cursor: pointer;
+    border-radius: 1px;
+    transition: .7s;
+    margin-left: 24%;
+}

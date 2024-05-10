@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="author"         content="Roach">
+    <meta name="keyword"        content="login + signup + Forms + data">
+    <meta name="description"    content="Login & Signup Forms">
+
+    <!------------------------- Adding Form Icon ------------------------->
+    <link rel="icon" href="images/roach.ico" type="image/x-icon">
+
+    <!-------------------- Linking External css files -------------------->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/mediaQuery.css" rel="stylesheet" type="text/css">
+
+    <!------------------- Linking Font Awesome library file ---------------->
+    <link href="fonts/css/all.css" rel="stylesheet" type="text/css">
+
+    
+    <title>TOOLS WEB | LOGIN</title>
+</head>
+<body>
+    <!-- creating a main div to contain all element-->
+    <div class="main-layout">
+        <!-- Adding background video -->
+        <video id="background-video" autoplay loop muted>
+            <source src="video/Tech.mp4" type="video/mp4">
+        </video>
+   
+
+    <!-- creating a header contain -->
+    <div class="header">
+        <div class="element">
+            &lt; &lt; Back To Preview
+        </div>
+
+        <div class="icon">
+            <i class="fa-solid fa-terminal fa-flip"></i>
+        </div>
+
+        <div class="signup">
+            <label id="member">Not a member?</label>
+            <button type="submit" class="signup" id="switchButton" onclick="switchLayout()" >Signup</button>
+        </div>
+    </div>
+
+    <!-- form body -->
+    <div class="form-card">
+        <!-- creating two separate divs -->
+        <div class="left">
+            <!-- adding content to left side -->
+            <div class="ruler"></div>
+
+            <div class="content">
+                <h3><strong>Welcome to </strong> <roach>ToolsWeb</roach></h3>
+                <div class="ruler2"></div>
+
+                <p id="dynamicLabel">We're thrilled to have you join our innovative community of software
+                   enthusiastics. At ToolsWeb joins us as we embark on a journey of innovation,
+                   creativity, and endless opportunities. Together let's shape the future
+                   of Software.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="right">
+            <!-- creating a form element -->
+            <form id="login">
+
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username" class="username" required>
+                </div>
+
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" class="pass" required>
+                </div>
+
+                <div class="remember">
+                    <!-- create a check box called remember me-->
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember" class="rem" >Remember Me</label>
+
+                    <!-- creating a login button -->
+                    <button type="submit" class="btnLogin" >Login</button>
+                </div>
+            </form>
+
+            <!-- creating a second form : Signup Form -->
+            <form id="Signup">
+                <div class="fullname">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="First Name" class="firstname" required> 
+
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Last Name"  class="lastname" required>
+                </div>
+
+                <div class="Username">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Username" class="username" required>
+                </div>
+
+                <div class="Password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" class="pass" required />
+
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password" class="pass" required>
+                </div>
+
+                <!-- creating a date time picker -->
+                <div class="calender">
+                    <span id="dob">Date Of Birth</span>
+                    <input type="date" data-date-inline-picker="true" class="input-calender">
+                </div>
+
+                <!-- creatina a hyperlink -->
+                <a href="#" id="terms">Terms & Conditions</a>
+                
+
+                <!-- creating a signup button  -->
+                <button type="submit" class="submit" name="submit">Signup</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- Linking external Javascript File-->
+    <script type="text/javascript" src="javascript/functions.js"></script>
+</body>
+</html>
+
